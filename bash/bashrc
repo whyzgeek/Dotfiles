@@ -111,6 +111,7 @@ fi
 alias ll='ls -l'
 alias la='ls -A'
 alias l='ls -CF'
+alias py3='python3'
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like
@@ -129,11 +130,10 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
 fi
 
 ###-tns-completion-start-###
-if [ -f /home/haridas/.tnsrc ]; then 
-    source /home/haridas/.tnsrc 
+if [ -f $HOME/.tnsrc ]; then 
+    source $HOME/.tnsrc 
 fi
 ###-tns-completion-end-###
 export NODE_PATH=/usr/lib/nodejs:/usr/lib/node_modules:/usr/share/javascript:/mnt/data/softwares/Languages/node/lib/node_modules
 
 
-. /mnt/data/projects/DataScience/torch/install/bin/torch-activate

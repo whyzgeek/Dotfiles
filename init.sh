@@ -1,14 +1,7 @@
 #!/bin/bash
 
-sudo apt-get install -y git
+#sudo apt-get install -y git
 
-if [ -d ~/Dotfiles ]
-then
-    cd ~/Dotfiles
-    git pull origin master
-else
-    git clone https://github.com/haridas/Dotfiles.git ~/Dotfiles
-fi
 
 
 # Got to Git repo
@@ -40,9 +33,14 @@ fi
 # Build the command-t
 
 # Intiall vim with all scripting language support.
-sudo apt-get install vim-nox ruby-dev
+#sudo apt-get install vim-nox ruby-dev
 
 cd ~/Dotfiles/vim-files/vim/bundle/Command-T/ruby/command-t
 ruby extconf.rb
 make
 
+cat > ~/.profile << EOF
+for file in $(ls ~/Dotfiles/bash); do
+    source ~/Dotfiles/bash/$file
+done
+EOF

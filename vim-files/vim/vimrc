@@ -88,10 +88,10 @@ set listchars=tab:▸\ ,eol:¬
 
 " Naviagations using keys up/down/left/right
 " Disabling default keys to learn the hjkl
-nnoremap <up> <nop>
-nnoremap <down> <nop>
-nnoremap <left> <nop>
-nnoremap <right> <nop>
+" nnoremap <up> <nop>
+" nnoremap <down> <nop>
+" nnoremap <left> <nop>
+" nnoremap <right> <nop>
 "inoremap <up> <nop>
 "inoremap <down> <nop>
 "inoremap <left> <nop>
@@ -289,7 +289,7 @@ imap <leader>l <ESC>:TagbarToggle<cr>i
 "
 
 " Add the virtualenv's site-packages to vim path
-py3 << EOF
+python << EOF
 import os.path
 import sys
 import vim

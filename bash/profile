@@ -25,7 +25,7 @@ fi
 if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
-
+export CLICOLOR=1
 # Make the TMUX won't canonicalize or expand the symlinks.
 # ${PWD#/mnt/data/projects} Google - bash variable substitution
 [ "x${PWD#/mnt/data/projects}" != "x$PWD" ] && cd ~/projects${PWD#/mnt/data/projects}
