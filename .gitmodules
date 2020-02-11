@@ -12,7 +12,7 @@
 	url = https://github.com/scrooloose/nerdcommenter.git
 [submodule "vim-files/vim/bundle/rope"]
 	path = vim-files/vim/bundle/rope
-	url = https://github.com/klen/rope-vim.git
+	url = https://github.com/python-rope/ropevim 
 [submodule "vim-files/vim/bundle/syntastic"]
 	path = vim-files/vim/bundle/syntastic
 	url = https://github.com/scrooloose/syntastic.git
